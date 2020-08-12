@@ -1,0 +1,79 @@
+<html>
+ <head>
+<meta charset="utf-8">
+<title>new registration</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style type = "text/css">
+			  input{
+			  	border-color: #D4AF37;
+			  	width: 350px;
+			  }
+			   form p{
+			  padding-left:60px;
+			   padding-top:30px;
+			  font-size: 20px;}
+			  input, label {
+              display:block;
+              }
+			 
+		 </style>
+</head>
+<body>
+	 <header style="height: 600px;">
+       	<div class="menu-toggle" id="menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="overlay"></div>
+        <div class="container">
+	<nav>
+		<h1 class="brand"><a href="index.html"><span>TU</span>athon</a></h1>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About us</a></li>
+			<li><a href="hackathon_list.html">Hackathons</a></li>
+			<li><a href="project_list.html">Projects</a></li>
+			<li><a href="winners.html">Winners</a></li>
+		</ul>
+	</nav>
+</div>
+<div class="title">
+	<h1>JOIN US!</h1>
+	<p>Build products, practice skills, learn technologies<br> and grow your network,It's time to help your socity and</br> 
+	apply what you learn at Taif university</p>
+</div>
+       </header>
+    <section>
+       	<div align="left">
+<form method= "post" action = "registeration_database.php">
+ <p><label>Hachathon you want to participate in:
+ <select name="listOfEvents" required>
+ 	<option value="">Choose one</option>
+ 	<option>Build an app using Flutter</option>
+ 	<option>Web site design for improving health care at university</option>
+<option>Best robot maker</option>
+ </select></label></p>
+<p> <label>Student Name:
+			        <input name = "sname" type = "text" size = "25"></label></p>
+<p> <label>Student ID: <input name = "sid" type = "text" size = "25" required> </label> </p>				
+<p> <label>Student College:
+			        <input name = "scollege" type = "text" size = "25" ></label></p>					
+<p> <label>Student major:
+			        <input name = "smajor" type = "text" size = "25"></label></p>													
+<p> <label>Mobile number:
+			        <input name = "mnumber" type = "text" size = "25"></label></p>					
+<p> 
+<label>Email: 
+<input name = "email" type = "email" placeholder = "name@domain.com" required /> 
+</label>
+ </p>					
+	<p>
+<input class= btn style="position: absolute; top: 126%; left: 59%;" type = "submit" value = "Register your information" />				
+	
+	</div>
+	<div style="position: absolute; top: 90%; left: 60%;opacity: 0.7">
+		<img src="RegisterIcon.GIF">
+	</div>
+       </section>
+
+</body>
+</html>
